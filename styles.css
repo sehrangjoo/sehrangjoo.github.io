@@ -1,0 +1,79 @@
+body {
+    font-family: 'Be Vietnam';font-size: 22px;
+}
+
+#header {
+  display: block;
+  color: #8089E8;
+  bottom: 0;
+  text-align: center;
+  font-size: 32px;
+   padding: 2px;
+}
+
+
+#intro {
+	margin: 35px auto;
+	width: 80%;
+	font-size: 18px;
+}
+
+.row {
+  display: flex;
+  overflow: hidden;
+}
+
+.column1 {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column2 {
+  width: 75%;
+}
+
+.photo {
+    margin: 0 auto;
+    width: 85%;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+
+  .row{
+    display:block;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .column1, .column2 {
+    width: 100%;
+    display: block;
+    float: none;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+  }
+
+  .photo {
+    text-align:center;
+    width: 35%;
+  }
+
+}
+
+#research{
+	margin: 60px auto;
+    width: 80%;
+    font-size: 18px;
+}
