@@ -218,8 +218,8 @@ footer {
 /* for mobile use! */
 @media screen and (orientation: portrait) {
   .intro h1 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem;
+    font-size: 3.5rem;
+    letter-spacing: 0.18rem;
     text-indent: 0;
   }
 
@@ -229,7 +229,7 @@ footer {
   }
 
   .btn {
-    width: 10rem;
+    width: 9rem;
     font-size: 1rem;
     margin: 0.5rem auto;
   }
@@ -254,11 +254,11 @@ footer {
     margin: 0 auto;
     padding: 2rem 2rem;
     font-family: "montserrat";
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #040E4A;
     border-radius: 1rem;
-    border-left: 0.2rem solid #BDD0F0;
-    border-right: 0.2rem solid #BDD0F0;
+    border-left: 0.2rem solid #040E4A;
+    border-right: 0.2rem solid #040E4A;
     margin-top: 5rem;
     text-align: left;
   }
