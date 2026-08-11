@@ -8,144 +8,15 @@
 body {
   font-family: "montserrat";
   color: #333;
-  background: #D7D2D9; 
+  background: #D7D2D9;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
 
-.intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  min-height: 100vh; /* full viewport */
-  background: #D7D2D9;
-}
 
-.intro h1 {
-  font-size: 6rem;
-  margin-bottom: 2rem;
-  color: #C1C0C4;
-  font-family: "alice";
-  letter-spacing: 0.5rem;
-  text-indent: 0.5rem;
-  text-align: center;
-}
-
-
-.intro p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 1.2rem;
-  font-family: "montserrat";
-  color: #C1C0C4;
-}
-
-/* Button group styling */
-.btn-wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  width: 10rem;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  padding: 0.7rem 1.2rem;
-  border-radius: 1rem;
-  font-size: 1rem;
-  font-family: "montserrat";
-  transition: background 0.3s ease;
-  border: 0.2rem solid #BDD0F0;
-}
-
-.btn:hover {
-  background: #BDD0F0;
-} 
-
-a {
-  color: #541A48;
-}
-
-a1 {
-  color: #BDD0F0;
-}
-
-/* Sections styling */
-section {
-  max-width: 75%;
-  margin: 0 auto;
-  padding: 4rem 4rem;
-  font-family: "montserrat";
-  font-size: 1.1rem;
-  color: #040E4A;
-  border-radius: 2rem;
-  border-left: 0.5rem solid #040E4A;
-  border-right: 0.5rem solid #040E4A;
-  margin-top: 5rem;
-  text-align: le ft;
-}
-
-#equal {
-  font-size: 1rem;
-}
-
-section h2 {
-  font-family: 'alice';
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #040E4A;
-  letter-spacing: 0.2rem;
-  text-indent: 0.4rem;
-}
-
-section h3 {
-  font-weight: normal;
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-
-/* Footer or bottom spacing */
-footer {
-  height: 4rem;
-}
-
-
-.alice-regular {
-  font-family: "Alice", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-
-/* font used elsewhere */
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.scroll-down {
-  display: inline-block;
-  margin-top: 5rem;
-  text-decoration: none;
-  color: #C1C0C4;
-  font-size: 2rem;
-  transition: color 0.3s ease;
-}
-
-.scroll-down:hover {
-  color: #BDD0F0;
-}
+/* =========================
+   INTRO / LANDING PAGE
+========================= */
 
 .intro {
   position: relative;
@@ -173,6 +44,112 @@ footer {
   z-index: 2;
 }
 
+.intro h1 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  color: #C1C0C4;
+  font-family: "alice";
+  letter-spacing: 0.5rem;
+  text-indent: 0.5rem;
+  text-align: center;
+}
+
+.intro p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: "montserrat";
+  color: #C1C0C4;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  width: 10rem;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-family: "montserrat";
+  transition: background 0.3s ease;
+  border: 0.2rem solid #BDD0F0;
+}
+
+.btn:hover {
+  background: #BDD0F0;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  color: #541A48;
+}
+
+a1 {
+  color: #BDD0F0;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section {
+  max-width: 75%;
+  margin: 0 auto;
+  padding: 4rem 4rem;
+  font-family: "montserrat";
+  font-size: 1.1rem;
+  color: #040E4A;
+  border-radius: 1.5rem;
+  border-left: 0.4rem solid #040E4A;
+  border-right: 0.4rem solid #040E4A;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+section h2 {
+  font-family: "alice";
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #040E4A;
+  letter-spacing: 0.2rem;
+  text-indent: 0.4rem;
+}
+
+section h3 {
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#equal {
+  font-size: 1rem;
+}
+
+
+/* =========================
+   ABOUT IMAGE
+========================= */
+
 .about-pic {
   float: left;
   width: 20rem;
@@ -183,40 +160,174 @@ footer {
 }
 
 
+/* =========================
+   BLOG
+========================= */
+
+
 #blog {
-    max-width: 800px;
-    margin: 50px auto;
+  color: #040E4A;
 }
+
+#blog > h2 {
+  color: #040E4A;
+  margin-bottom: 2.5rem;
+}
+
+
+/* Individual blog post */
 
 .blogPost {
-    border: 1px solid #1B2856;
-    border-radius: 8px;
-    padding: 12px 18px;
-    margin-bottom: 15px;
-    background: #C1C0C4;
-    opacity: 0.80;
+  margin-bottom: 40px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid rgba(27, 40, 86, 0.25);
+  color: #1B2856;
 }
+
+
+/* Remove default triangle */
 
 .blogPost summary {
-    color: #1B2856;
-    font-style: normal;
+  list-style: none;
+  cursor: pointer;
 }
 
-.blogPost[open] {
-    background:#C1C0C4 ;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    opacity: 0.80;
-    color: #1B2856;
-    font-style: normal;
-}
-
-.blog-post p {
-    line-height: 1.6;
+.blogPost summary::-webkit-details-marker {
+  display: none;
 }
 
 
-/* for mobile use! */
+/* Blog post title */
+
+.blogPost summary h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.45rem;
+  font-weight: 600;
+  color: #1B2856;
+}
+
+
+/* Blog post date */
+
+.postDate {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  color: #777985;
+}
+
+
+/* Blog post preview */
+
+.postPreview {
+  margin: 0;
+  line-height: 1.65;
+  color: #4e5160;
+}
+
+
+/* "Read more" text */
+
+.postPreview::after {
+  content: "  Read more ↓";
+  color: #1B2856;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+
+/* Full blog post */
+
+.postContent {
+  margin-top: 30px;
+  line-height: 1.75;
+  color: #303342;
+}
+
+.postContent p {
+  margin: 0 0 1.4em;
+}
+
+
+/* Blog links */
+
+.blogPost a {
+  color: #1B2856;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.blogPost a:hover {
+  opacity: 0.65;
+}
+
+
+/* Open blog post */
+
+.blogPost[open] .postPreview::after {
+  content: "";
+}
+
+.blogPost[open] summary h3 {
+  margin-bottom: 5px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  height: 4rem;
+}
+
+
+/* =========================
+   FONT CLASSES
+========================= */
+
+.alice-regular {
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Font used elsewhere */
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+/* =========================
+   SCROLL DOWN
+========================= */
+
+.scroll-down {
+  display: inline-block;
+  margin-top: 5rem;
+  text-decoration: none;
+  color: #C1C0C4;
+  font-size: 2rem;
+  transition: color 0.3s ease;
+}
+
+.scroll-down:hover {
+  color: #BDD0F0;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
 @media screen and (orientation: portrait) {
+
   .intro h1 {
     font-size: 3.5rem;
     letter-spacing: 0.18rem;
@@ -249,9 +360,14 @@ footer {
     transition: color 0.3s ease;
   }
 
+
+  /* -------------------------
+     Sections on mobile
+  ------------------------- */
+
   section {
     max-width: 80%;
-    margin: 0 auto;
+    margin: 5rem auto 0;
     padding: 2rem 2rem;
     font-family: "montserrat";
     font-size: 1rem;
@@ -259,19 +375,14 @@ footer {
     border-radius: 1rem;
     border-left: 0.2rem solid #040E4A;
     border-right: 0.2rem solid #040E4A;
-    margin-top: 5rem;
     text-align: left;
-  }
-
-  #equal {
-    font-size: 1rem;
   }
 
   section h2 {
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #BDD0F0;
+    color: #040E4A;
     letter-spacing: 0.4rem;
     text-indent: 0.4rem;
   }
@@ -283,15 +394,50 @@ footer {
     margin-bottom: 1rem;
   }
 
+  #equal {
+    font-size: 1rem;
+  }
+
+
+  /* -------------------------
+     About image on mobile
+  ------------------------- */
+
   .about-pic {
     display: block;
     float: none;
     width: 80%;
     height: auto;
     border-radius: 1rem;
-    margin: 1rem auto;
-    margin-bottom: 3rem;
+    margin: 1rem auto 3rem;
   }
 
 
+  /* -------------------------
+     Blog on mobile
+  ------------------------- */
+
+  #blog {
+    max-width: 80%;
+    padding: 2rem 2rem;
+  }
+
+  #blog > h2 {
+    font-size: 2rem;
+  }
+
+  .blogPost summary h3 {
+    font-size: 1.3rem;
+  }
+
+  .postPreview {
+    line-height: 1.6;
+  }
+
+  .postContent {
+    margin-top: 25px;
+    line-height: 1.7;
+  }
+
 }
+
