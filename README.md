@@ -1,0 +1,1 @@
+Note that the base code for this website was originally pulled from https://talboger.github.io/ (https://github.com/talboger/talboger.github.io). That's a much better place to start if you're looking to set up a page than my own code will be!
