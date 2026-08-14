@@ -206,10 +206,6 @@ a {
   color: #541A48;
 }
 
-a1 {
-  color: #040E4A;
-}
-
 
 /* =========================
    GENERAL SECTIONS
@@ -400,14 +396,7 @@ footer {
 }
 
 
-/* Font used elsewhere */
 
-.montserrat-<uniquifier> {
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
 
 
 /* =========================
@@ -432,7 +421,7 @@ footer {
    MOBILE
 ========================= */
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 700px) {
 
   .intro h1 {
     font-size: 3.5rem;
