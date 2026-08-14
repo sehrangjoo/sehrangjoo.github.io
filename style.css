@@ -63,6 +63,49 @@ body {
 }
 
 
+
+/* =========================
+   Navigation version of intro
+========================= */
+
+.nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 15vh;
+  background: url("files/poppies.jpeg") center 55% no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.nav:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #1B2856;
+  opacity: 0.80;
+  z-index: 1;
+}
+
+.nav > * {
+  position: relative;
+  z-index: 2;
+}
+
+.nav h1 {
+  font-size: 3.3rem;
+  margin: 0 0 0rem 0; 
+  color: #C1C0C4;
+  font-family: "alice";
+  letter-spacing: 0.2rem;
+  text-indent: 0.2rem;
+  text-align: center;
+}
+
+
 /* =========================
    BUTTONS
 ========================= */
@@ -76,13 +119,13 @@ body {
 
 .btn {
   display: inline-block;
-  width: 10rem;
+  width: 8rem;
   text-align: center;
   text-decoration: none;
   color: #fff;
   padding: 0.7rem 1.2rem;
   border-radius: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: "montserrat";
   transition: background 0.3s ease;
   border: 0.2rem solid #BDD0F0;
@@ -92,6 +135,68 @@ body {
   background: #BDD0F0;
 }
 
+/* nav buttons */
+.btn-wrapper1 {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+.btn1 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 5rem;
+
+  text-align: center;
+  text-indent: 0;
+  letter-spacing: normal;
+
+  text-decoration: none;
+  color: #fff;
+  padding: 0;
+
+  font-size: .9rem;
+  font-family: "montserrat";
+  font-style: italic;
+  transition: background 0.3s ease;
+}
+
+.btn1:hover {
+  background: #BDD0F0;
+}
+/* =========================
+   Icons
+========================= */
+
+/* icons row container */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;               /* space between icons */
+  margin-top: 1rem;        /* spacing above the icons row */
+}
+
+/* icon links */
+.icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;  /* instead of inline */
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #BDD0F0;
+  font-size: 1.5rem;
+  line-height: 1;        /* helps avoid baseline weirdness */
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #040E4A;
+}
 
 /* =========================
    LINKS
@@ -102,7 +207,7 @@ a {
 }
 
 a1 {
-  color: #BDD0F0;
+  color: #040E4A;
 }
 
 
@@ -113,14 +218,14 @@ a1 {
 section {
   max-width: 75%;
   margin: 0 auto;
-  padding: 4rem 4rem;
+  padding: 2rem 4rem 4rem 4rem;
   font-family: "montserrat";
   font-size: 1.1rem;
   color: #040E4A;
   border-radius: 1.5rem;
-  border-left: 0.4rem solid #040E4A;
-  border-right: 0.4rem solid #040E4A;
-  margin-top: 2rem;
+  border-left: 0.7rem double #040E4A;
+  border-right: 0.7rem double #040E4A;
+  margin-top: 3rem;
   text-align: left;
 }
 
@@ -129,6 +234,7 @@ section h2 {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 2rem;
+  margin-top: 0rem;
   color: #040E4A;
   letter-spacing: 0.2rem;
   text-indent: 0.4rem;
@@ -147,7 +253,7 @@ section h3 {
 
 
 /* =========================
-   ABOUT IMAGE
+   ABOUT 
 ========================= */
 
 .about-pic {
@@ -223,7 +329,7 @@ section h3 {
 .postPreview {
   margin: 0;
   line-height: 1.65;
-  color: #4e5160;
+  color: #303342;
 }
 
 
